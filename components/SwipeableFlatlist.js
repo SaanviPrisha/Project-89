@@ -2,6 +2,7 @@ import React from 'react';
 import { StyleSheet, Text, View, FlatList, Animated, Dimensions } from 'react-native';
 import { SwipeListView } from 'react-native-swipe-list-view'
 import { ListItem, Icon } from 'react-native-elements'
+import { RFValue } from 'react-native-responsive-fontsize'
 import db from '../Config'
 import firebase from 'firebase'
 
@@ -75,7 +76,7 @@ const styles = StyleSheet.create({
     backTextWhite: { 
         color: "#FFF", 
         fontWeight: "bold", 
-        fontSize: 15, 
+        fontSize: RFValue(15), 
         textAlign: "center", 
         alignSelf: "flex-start" 
     }, 
