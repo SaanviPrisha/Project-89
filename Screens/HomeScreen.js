@@ -1,5 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View, TextInput, TouchableOpacity } from 'react-native';
+import { RFValue } from 'react-native-responsive-fontsize'
 import db from '../config'
 import firebase from 'firebase'
 import MyHeader from '../components/MyHeader'
@@ -187,7 +188,7 @@ const styles = StyleSheet.create({
     height: 50,
     borderRadius: 5,
     textAlign: 'center',
-    fontSize: 20,
+    fontSize: RFValue(20),
     marginTop: 200,
     marginLeft: 30,
   },
@@ -200,7 +201,7 @@ const styles = StyleSheet.create({
     height: 70,
     borderRadius: 5,
     textAlign: 'center',
-    fontSize: 20,
+    fontSize: RFValue(20),
     marginTop: 30,
     marginLeft: 30,
   },
@@ -224,14 +225,14 @@ const styles = StyleSheet.create({
     alignText: 'center'
   },
   login: {
-    fontSize: 16,
+    fontSize: RFValue(16),
     marginTop: 20,
     fontFamily: 'Courier New',
     fontWeight: 'bold'
   },
   login1: {
     marginTop: 20,
-    fontSize: 22,
+    fontSize: RFValue(22),
     fontFamily: 'Georgia',
   },
 });
