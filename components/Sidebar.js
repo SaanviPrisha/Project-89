@@ -2,6 +2,7 @@ import React from 'react';
 import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 import { DrawerItems } from 'react-navigation-drawer'
 import { Avatar } from 'react-native-elements'
+import { RFValue } from 'react-native-elements'
 import * as ImagePicker from 'expo-image-picker'
 import * as Permissons from 'expo-permissions'
 import db from '../Config'
@@ -112,7 +113,7 @@ const styles = StyleSheet.create({
     alignItems: 'center'
   },
   text: {
-    fontSize: 15, 
+    fontSize: RFValue(15), 
     fontWeight: 'bold',
     alignSelf: 'center',
   },
@@ -124,7 +125,7 @@ const styles = StyleSheet.create({
     alignSelf: 'center'
   },
   login: {
-    fontSize: 15, 
+    fontSize: RFValue(15), 
     fontWeight: 'bold',
     alignSelf: 'center',
     marginTop: 10
