@@ -1,6 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View, FlatList } from 'react-native';
 import { ListItem, Icon } from 'react-native-elements'
+import { RFValue } from 'react-native-responsive-fontsize'
 import db from '../config'
 import firebase from 'firebase'
 import MyHeader from '../components/MyHeader'
@@ -73,7 +74,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
   },
   login: {
-    fontSize: 16,
+    fontSize: RFValue(16),
     marginTop: 20,
     fontFamily: 'Courier New',
     fontWeight: 'bold'
