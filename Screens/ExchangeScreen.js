@@ -1,6 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View, TouchableOpacity, TextInput, FlatList } from 'react-native';
 import { ListItem } from 'react-native-elements'
+import { RFValue } from 'react-native-responsive-fontsize'
 import db from '../config'
 import firebase from 'firebase'
 import MyHeader from '../components/MyHeader'
@@ -75,7 +76,7 @@ const styles = StyleSheet.create({
     alignText: 'center'
   },
   textStyle: {
-    fontSize: 15, 
+    fontSize: RFValue(15), 
     fontWeight: 'bold',
     alignSelf: 'center',
     marginTop: 10
