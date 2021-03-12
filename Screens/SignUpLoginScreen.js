@@ -9,6 +9,7 @@ import {
   ScrollView,
   KeyboardAvoidingView
 } from 'react-native';
+import { RFValue } from 'react-native-elements 
 import db from '../Config';
 import firebase from 'firebase';
 
