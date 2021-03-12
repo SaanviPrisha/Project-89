@@ -222,7 +222,7 @@ const styles = StyleSheet.create({
     height: 50,
     borderRadius: 5,
     textAlign: 'center',
-    fontSize: 20,
+    fontSize: RFValue(20),
     marginTop: 30,
   },
   center1: {
@@ -239,7 +239,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   ScanButtonText: {
-    fontSize: 20,
+    fontSize: RFValue(20),
     fontWeight: 'bold',
     textAlign: 'center',
   },
@@ -268,13 +268,13 @@ const styles = StyleSheet.create({
     marginLeft: 110
   },
   login: {
-    fontSize: 16,
+    fontSize: RFValue(16),
     marginTop: 20,
     fontFamily: 'Courier New',
     fontWeight: 'bold'
   },
   text: {
-    fontSize: 16,
+    fontSize: RFValue(16),
     marginTop: 20,
     marginLeft: 70,
     fontFamily: 'American Typewriter'
@@ -285,7 +285,7 @@ const styles = StyleSheet.create({
     height: 30,
     borderRadius: 5,
     textAlign: 'center',
-    fontSize: 20,
+    fontSize: RFValue(20),
     marginTop: 30,
     marginLeft: 30,
   },
@@ -295,7 +295,7 @@ const styles = StyleSheet.create({
     height: 50,
     borderRadius: 5,
     textAlign: 'center',
-    fontSize: 20,
+    fontSize: RFValue(20),
     marginTop: 30,
     marginLeft: 30,
   },
