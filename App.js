@@ -1,5 +1,6 @@
 import React from 'react';
 import { Image } from 'react-native'
+import { Icon } from 'react-native-elements'
 import { createBottomTabNavigator } from 'react-navigation-tabs'
 import { createAppContainer, createSwitchNavigator } from 'react-navigation'
 import LoginScreen from './Screens/SignUpLoginScreen'
@@ -50,11 +51,11 @@ const Stack = createStackNavigator({
   Details: { screen: RecieverDetails}
 })
 const Drawer = createDrawerNavigator({
-    Home: {screen: Tab},
-    Settings: { screen: SettingScreen },
-    Donations: { screen: MyDonations },
-    Notification: { screen: Notification },
-    Recieved_Items: { screen: RecievedItems}
+    Home: {screen: Tab, drawerIcon: <Icon name="home" type="fontawesome5"/>},
+    Settings: { screen: SettingScreen, drawerIcon: <Icon name="settings" type="fontawesome5"/> },
+    Donations: { screen: MyDonations, drawerIcon: <Icon name="gift" type="font-awesome"/> },
+    Notification: { screen: Notification, drawerIcon: <Icon name="bell" type="font-awesome"/> },
+    Recieved_Items: { screen: RecievedItems, drawerIcon: <Icon name="bell" type="font-awesome"/> }
 },{
   contentComponent: Sidebar
   },{
