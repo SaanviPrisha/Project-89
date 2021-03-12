@@ -1,6 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { Card } from 'react-native-elements'
+import { RFValue } from 'react-native-responsive-fontsize'
 import db from '../config'
 import firebase from 'firebase'
 import { TouchableOpacity } from 'react-native';
@@ -150,7 +151,7 @@ const styles = StyleSheet.create({
     marginLeft: 650
   },
   text: {
-    fontSize: 15, 
+    fontSize: RFValue(15), 
     fontWeight: 'bold',
     alignSelf: 'center',
   },
